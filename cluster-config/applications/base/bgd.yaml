@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: pricelist-app
+  name: bgd
 spec:
   destination:
-    namespace: pricelist
+    namespace: bgd
     server: https://kubernetes.default.svc
-  project: pricelist
+  project: bgd
   source:
-    path: pricelist/
-    repoURL: https://github.com/christianh814/gitops-examples
+    path: bgd/
+    repoURL: https://github.com/rdiazgav/gitops-examples
     targetRevision: master
   syncPolicy:
     automated:

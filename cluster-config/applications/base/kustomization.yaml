@@ -5,3 +5,4 @@ resources:
 - pipelines.yaml
 - container-security-operator.yaml
 - sealed-secrets.yaml
+- bgd.yaml
