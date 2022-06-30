@@ -37,3 +37,7 @@ Cluster Configurations:
 * Container Security Operator installed
 * Pipelines Operator installed
 * Sealed Secrets installed
+* BDG application, exposing an APP that shows green or blue bubbles depending on the colour attribute you will find on the deployment file:
+
+
+
