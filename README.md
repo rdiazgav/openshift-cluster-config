@@ -1,4 +1,7 @@
-Give the serviceAccount permission to admin the cluster.
+Install the cluster operator from OperatorHUB and create a defaul instance for ArgoCD.
+
+
+Then give the serviceAccount permission to admin the cluster.
 
 ```shell
 oc adm policy add-cluster-role-to-user cluster-admin -z openshift-gitops-argocd-application-controller -n openshift-gitops
