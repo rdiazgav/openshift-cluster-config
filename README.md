@@ -38,6 +38,17 @@ Cluster Configurations:
 * Pipelines Operator installed
 * Sealed Secrets installed
 * BDG application, exposing an APP that shows green or blue bubbles depending on the colour attribute you will find on the deployment file:
-
+```shell
+https://github.com/rdiazgav/gitops-examples/tree/master/bgd/deployment.yaml
+[...]
+    spec:
+      containers:
+      - image: quay.io/rhdevelopers/bgd:1.0.0
+        name: bgd
+        env:
+        - name: COLOR
+          value: "blue"  -----> to be replaced by "green" to see how ArgoCD trigger the changes when a new code change is made
+        resources: {}
+[...]
 
 
